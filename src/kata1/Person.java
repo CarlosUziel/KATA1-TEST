@@ -30,7 +30,21 @@ public class Person {
         return birthday;
     }
     
+    public int getAge() {
+        return millisecondsToYears(getAgeInMilliseconds());
+    }
     
+    private int millisecondsToYears (long milliseconds){
+        return (int) (milliseconds / MILLISECONDS_PER_YEAR);
+    }
+    
+    private long getAgeInMilliseconds() {
+        return now().getTime() - birthday.getTime();
+    }
+    
+    private Date now(){
+        return new Date();
+    }
     
     
 }
