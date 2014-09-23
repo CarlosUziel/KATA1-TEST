@@ -1,16 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package kata1;
 
 import java.util.Date;
 
-/**
- *
- * @author UZIEL
- */
 public class Person {
 
     private static final long MILLISECONDS_PER_YEAR = (long) (1000 * 60 * 60 * 24 * 365);
